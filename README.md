@@ -30,10 +30,10 @@ self.imageView.image = [UIImage imageWithData:imageData];
 // set custom loading indicator
 UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
 [activityIndicator startAnimating];
-self.activityIndicator = activityIndicator;
+self.imageView.activityIndicator = activityIndicator;
 
 // set error image
-self.errorImage = [UIImage imageNamed:@"errorImage"];
+self.imageView.errorImage = [UIImage imageNamed:@"errorImage"];
 
 // download image (does nothing if the image exists)
 [self.imageView downloadImageWithLink:@"http://lorempixel.com/400/400/" withSuccessBlock:^(NSData *imageData) {
@@ -43,6 +43,10 @@ self.errorImage = [UIImage imageNamed:@"errorImage"];
 	
 } failureBlock:nil];
 ```
+
+# License
+
+The project is under the MIT License.
 
 # Todo
 
