@@ -1,0 +1,57 @@
+#####
+# OS X temporary files that should never be committed
+#
+# http://www.westwind.com/reference/os-x/invisibles.html
+
+.DS_Store # OS X junk file
+[Tt]humbs.db # Windows junk file
+.Trashes
+*.swp
+*.lock
+profile
+
+
+
+#####
+# Xcode
+#
+
+[Bb]uild/ # slash on the end, so we only remove the FOLDER, not any files that were badly named "build"
+*.pbxuser # http://lists.apple.com/archives/xcode-users/2004/Jan/msg00193.html
+!default.pbxuser # whitelist the default, some projects need to use these
+*.mode1v3 # http://lists.apple.com/archives/xcode-users/2007/Oct/msg00465.html
+!default.mode1v3 # whitelist the default, some projects need to use these
+*.mode2v3 # http://lists.apple.com/archives/xcode-users/2007/Oct/msg00465.html
+!default.mode2v3 # whitelist the default, some projects need to use these
+*.perspectivev3 # http://stackoverflow.com/questions/5223297/xcode-projects-what-is-a-perspectivev3-file
+!default.perspectivev3 # whitelist the default, some projects need to use these
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData/ # slash on the end, so we only remove the FOLDER, not any files that were badly named "DerivedData"
+*.hmap
+*.ipa
+*.xcuserstate
+*~.nib # NIB/XIB files still exist even on Storyboard projects, so we want this...
+
+
+
+#####
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
+
+Pods/
+# !Podfile.lock # whitelist the Podfile.lock file only if the Pods/ folder is committed to git
+# !Pods/Manifest.lock # whitelist the Manifest.lock file only if the Pods/ folder is committed to git
+
+
+
+#####
+# SVN
+#
+
+.svn
