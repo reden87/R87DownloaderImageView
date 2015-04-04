@@ -2,6 +2,8 @@
 
 R87ImageView is a `UIImageView` subclass which makes possible to download image from the provided link. While the download is in progress the default or a custom propgress bar is displayed, the download returns a success or failure block.
 
+![R87ImageView example image](http://reden87.info/GitHub/R87ImageView.gif)
+
 # Usage
 
 Use this method to start image download from a server:
@@ -46,7 +48,7 @@ self.imageView.errorImage = [UIImage imageNamed:@"errorImage"];
 
 # License
 
-The project is under the MIT License.
+The project is under the [MIT License](/LICENSE).
 
 # Todo
 
@@ -60,4 +62,3 @@ Gergő Németh (reden87)
 * [LinkedIn](https://www.linkedin.com/in/reden87)
 * [Twitter](https://twitter.com/reden87)
 * [GitHub](https://github.com/reden87)
-* [Skype](skype:reden87?chat)
