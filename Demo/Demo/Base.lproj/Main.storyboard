@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nzM-pg-LR7" customClass="R87ImageView">
+                                <rect key="frame" x="85" y="266" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Gi0-mg-fXa"/>
+                                    <constraint firstAttribute="height" constant="150" id="Qdx-WD-2dC"/>
+                                    <constraint firstAttribute="width" constant="150" id="ap1-iG-uH4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="rgi-Rw-uBx"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gi0-mg-fXa"/>
+                                        <exclude reference="rgi-Rw-uBx"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkB-zP-zXf">
+                                <rect key="frame" x="120" y="424" width="80" height="30"/>
+                                <state key="normal" title="add images">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addImages" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQI-8n-eyw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swv-Ph-W0J">
+                                <rect key="frame" x="20" y="28" width="280" height="72"/>
+                                <string key="text">If you press the "add image" button for the first time it downloads images from the internet. Then you should restart the application and press the button again. It will load the image from a saved state.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Pt-SX-hYV" customClass="R87ImageView">
+                                <rect key="frame" x="85" y="108" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="VpO-kh-Cec"/>
+                                    <constraint firstAttribute="width" constant="150" id="cjC-Yn-H9Q"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Pt-SX-hYV" firstAttribute="top" secondItem="swv-Ph-W0J" secondAttribute="bottom" constant="8" symbolic="YES" id="1sE-EV-zCq"/>
+                            <constraint firstAttribute="centerX" secondItem="9Pt-SX-hYV" secondAttribute="centerX" id="6Mz-7C-Snu"/>
+                            <constraint firstAttribute="centerX" secondItem="qkB-zP-zXf" secondAttribute="centerX" id="Aob-1U-nEr"/>
+                            <constraint firstAttribute="centerX" secondItem="nzM-pg-LR7" secondAttribute="centerX" id="Bjk-il-bsT"/>
+                            <constraint firstItem="swv-Ph-W0J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="P1t-cs-nYP"/>
+                            <constraint firstItem="swv-Ph-W0J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Tbv-AQ-kHA"/>
+                            <constraint firstItem="qkB-zP-zXf" firstAttribute="top" secondItem="nzM-pg-LR7" secondAttribute="bottom" constant="8" symbolic="YES" id="d8h-2P-CiX"/>
+                            <constraint firstItem="nzM-pg-LR7" firstAttribute="top" secondItem="9Pt-SX-hYV" secondAttribute="bottom" constant="8" symbolic="YES" id="uWQ-Hk-nrj"/>
+                            <constraint firstAttribute="trailing" secondItem="swv-Ph-W0J" secondAttribute="trailing" constant="20" symbolic="YES" id="v2J-Ao-1S6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="firstImageView" destination="9Pt-SX-hYV" id="ftC-nb-OPv"/>
+                        <outlet property="secondImageView" destination="nzM-pg-LR7" id="4TG-sS-Fqk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
