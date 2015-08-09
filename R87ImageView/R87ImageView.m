@@ -18,7 +18,7 @@
 
 // getters
 - (UIView *)activityIndicator {
-	if( !_activityIndicator ) {
+	if (!_activityIndicator) {
 		UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
 		[activityIndicator startAnimating];
 		
@@ -37,7 +37,8 @@
 				 failureBlock:(void(^)(NSError *error))failureBlock {
 	
 	// return if image exists
-	if( self.image ) {
+	if (self.image) {
+		if (successBlock) successBlock(nil);
 		return;
 	}
 	
@@ -54,17 +55,17 @@
 		[self.activityIndicator removeFromSuperview];
 		
 		// return failure block in case of connection error
-		if( connectionError ) {
-			if( self.errorImage ) self.image = self.errorImage;
+		if (connectionError) {
+			if (self.errorImage) self.image = self.errorImage;
 			
-			if( failureBlock ) failureBlock(connectionError);
+			if (failureBlock) failureBlock(connectionError);
 			return;
 		}
 		
 		// return failure block in case of the resonse status code != 200 (OK)
 		NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-		if( httpResponse.statusCode != 200 ) {
-			if( self.errorImage ) self.image = self.errorImage;
+		if (httpResponse.statusCode != 200) {
+			if (self.errorImage) self.image = self.errorImage;
 			
 			if( failureBlock ) failureBlock([[NSError alloc] initWithDomain:R87CustomErrorDomain code:HTTPErrorCode userInfo:@{NSLocalizedDescriptionKey: HTTPErrorMessage}]);
 			return;
@@ -72,7 +73,7 @@
 		
 		// success: show image and call the success block
 		self.image = [UIImage imageWithData:data];
-		if( successBlock ) successBlock(data);
+		if (successBlock) successBlock(data);
 		
 	}];
 }
