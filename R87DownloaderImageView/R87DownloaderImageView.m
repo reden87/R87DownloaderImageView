@@ -1,18 +1,18 @@
 //
-//  R87ImageView.m
-//  R87ImageView
+//  R87DownloaderImageView.m
+//  R87DownloaderImageView
 //
 //  Created by Gergő Németh on 04/04/15.
 //  Copyright (c) 2015 reden87. All rights reserved.
 //
 
-#import "R87ImageView.h"
+#import "R87DownloaderImageView.h"
 
 #define R87CustomErrorDomain @"info.reden87"
 #define HTTPErrorCode 1001
 #define HTTPErrorMessage NSLocalizedString(@"Server response error!", nil)
 
-@implementation R87ImageView
+@implementation R87DownloaderImageView
 
 #pragma mark Lazy Instantiation
 

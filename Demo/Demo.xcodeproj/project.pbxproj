@@ -14,7 +14,8 @@
 		722566A51AD00B0400197630 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722566A41AD00B0400197630 /* Images.xcassets */; };
 		722566A81AD00B0400197630 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 722566A61AD00B0400197630 /* LaunchScreen.xib */; };
 		722566B41AD00B0400197630 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 722566B31AD00B0400197630 /* DemoTests.m */; };
-		722566BF1AD00C7E00197630 /* R87ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 722566BE1AD00C7E00197630 /* R87ImageView.m */; };
+		72357EF71B77B5A50057EBBC /* R87DownloaderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72357EF61B77B5A50057EBBC /* R87DownloaderImageView.m */; };
+		72357EF81B77B5A50057EBBC /* R87DownloaderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72357EF61B77B5A50057EBBC /* R87DownloaderImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +42,8 @@
 		722566AD1AD00B0400197630 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		722566B21AD00B0400197630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		722566B31AD00B0400197630 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
-		722566BD1AD00C7E00197630 /* R87ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = R87ImageView.h; path = ../../R87ImageView/R87ImageView.h; sourceTree = "<group>"; };
-		722566BE1AD00C7E00197630 /* R87ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = R87ImageView.m; path = ../../R87ImageView/R87ImageView.m; sourceTree = "<group>"; };
+		72357EF51B77B5A50057EBBC /* R87DownloaderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = R87DownloaderImageView.h; path = ../../R87DownloaderImageView/R87DownloaderImageView.h; sourceTree = "<group>"; };
+		72357EF61B77B5A50057EBBC /* R87DownloaderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = R87DownloaderImageView.m; path = ../../R87DownloaderImageView/R87DownloaderImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +85,7 @@
 		722566961AD00B0400197630 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				722566C01AD00C8200197630 /* R87ImageView */,
+				72357EF41B77B59C0057EBBC /* R87DownloaderImageView */,
 				722566A41AD00B0400197630 /* Images.xcassets */,
 				722566A11AD00B0400197630 /* Main.storyboard */,
 				7225669E1AD00B0400197630 /* ViewController.h */,
@@ -123,13 +124,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		722566C01AD00C8200197630 /* R87ImageView */ = {
+		72357EF41B77B59C0057EBBC /* R87DownloaderImageView */ = {
 			isa = PBXGroup;
 			children = (
-				722566BD1AD00C7E00197630 /* R87ImageView.h */,
-				722566BE1AD00C7E00197630 /* R87ImageView.m */,
+				72357EF51B77B5A50057EBBC /* R87DownloaderImageView.h */,
+				72357EF61B77B5A50057EBBC /* R87DownloaderImageView.m */,
 			);
-			name = R87ImageView;
+			name = R87DownloaderImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				722566BF1AD00C7E00197630 /* R87ImageView.m in Sources */,
 				722566A01AD00B0400197630 /* ViewController.m in Sources */,
+				72357EF71B77B5A50057EBBC /* R87DownloaderImageView.m in Sources */,
 				7225669D1AD00B0400197630 /* AppDelegate.m in Sources */,
 				7225669A1AD00B0400197630 /* main.m in Sources */,
 			);
@@ -244,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				722566B41AD00B0400197630 /* DemoTests.m in Sources */,
+				72357EF81B77B5A50057EBBC /* R87DownloaderImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

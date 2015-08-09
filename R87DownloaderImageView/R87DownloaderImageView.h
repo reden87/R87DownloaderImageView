@@ -1,6 +1,6 @@
 //
-//  R87ImageView.h
-//  R87ImageView
+//  R87DownloaderImageView.h
+//  R87DownloaderImageView
 //
 //  Created by Gergő Németh on 04/04/15.
 //  Copyright (c) 2015 reden87. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 /**
- <code>R87ImageView</code> is a <code>UIImageView</code> subclass which makes possible to download an image from the provided link.
+ <code>R87DownloaderImageView</code> is a <code>UIImageView</code> subclass which makes possible to download an image from the provided link.
  
  While the download is in progress the default or a custom propgress bar is displayed, the download returns a success block with the downloaded image or a failure block in case of an error.
  */
-@interface R87ImageView : UIImageView
+@interface R87DownloaderImageView : UIImageView
 
 #pragma mark - Properties
 /// ----------------

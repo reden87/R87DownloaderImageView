@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "R87ImageView.h"
+#import "R87DownloaderImageView.h"
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet R87ImageView *firstImageView;
-@property (weak, nonatomic) IBOutlet R87ImageView *secondImageView;
+@property (weak, nonatomic) IBOutlet R87DownloaderImageView *firstImageView;
+@property (weak, nonatomic) IBOutlet R87DownloaderImageView *secondImageView;
 
 @end
-
