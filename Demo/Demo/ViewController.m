@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 
-#define firstImageLink @"http://www.sfu.ca/~caoyuec/iat334/week%203%20-%20hobby%20helper/earth.png"
+#define firstImageLink @"https://raw.githubusercontent.com/reden87/R87DownloaderImageView/master/Assets/Earth.png"
 #define firstImageUserDefaultsKey @"fisrt image"
-#define secondImageLink @"http://static2.wallpedes.com/wallpaper/fox/fox-animal-wallpapers-hdwallpapers-fox-animal-hd-wallpaper-free-wallpapers-cell-phones-for-home-motocross-logo-racing-project.jpg"
+#define secondImageLink @"https://raw.githubusercontent.com/reden87/R87DownloaderImageView/master/Assets/Earth.jpg"
 #define secondImageUserDefaultsKey @"second image"
 
 @implementation ViewController
