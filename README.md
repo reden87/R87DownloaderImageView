@@ -3,7 +3,7 @@
 [![Cocoapods](https://img.shields.io/cocoapods/v/R87DownloaderImageView.svg)](http://cocoapods.org/pods/R87DownloaderImageView)
 [![Issues](https://img.shields.io/github/issues/reden87/R87DownloaderImageView.svg?style=flat)](https://github.com/reden87/R87DownloaderImageView/issues?state=open)
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/)
-[![Language](http://img.shields.io/badge/language-objective&dash;c-brightgreen.svg?style=flat)](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/)
+[![Language](http://img.shields.io/badge/language-objc-brightgreen.svg?style=flat)](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/reden87/R87DownloaderImageView/blob/master/LICENSE)
 
 ## Overview
@@ -66,7 +66,7 @@ self.imageView.errorImage = [UIImage imageNamed:@"errorImage"];
 
 ## Compatibility
 
-iOS 6+
+iOS 5.0+
 
 ## Contributing
 
