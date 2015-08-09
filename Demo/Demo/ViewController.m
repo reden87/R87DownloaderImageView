@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 
-#define firstImageLink @"https://raw.githubusercontent.com/reden87/R87DownloaderImageView/master/Assets/Earth.png"
+#define firstImageLink @"https://github.com/reden87/R87DownloaderImageView/raw/master/Assets/earth.png"
 #define firstImageUserDefaultsKey @"fisrt image"
-#define secondImageLink @"https://raw.githubusercontent.com/reden87/R87DownloaderImageView/master/Assets/Earth.jpg"
+#define secondImageLink @"https://github.com/reden87/R87DownloaderImageView/raw/master/Assets/fox.jpg"
 #define secondImageUserDefaultsKey @"second image"
 
 @implementation ViewController
