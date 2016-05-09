@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yle-G2-8DJ">
+                                <rect key="frame" x="600" y="100" width="720" height="129"/>
+                                <string key="text">If you press the "add image" button for the first time it downloads images from the internet. Then you should restart the application and press the button again. It will load the image from a saved state.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Gc-O6-q5H" customClass="R87DownloaderImageView">
+                                <rect key="frame" x="835" y="279" width="250" height="250"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="EAH-Hn-PK3"/>
+                                    <constraint firstAttribute="width" constant="250" id="bGF-AT-3cx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5mj-u7-NLQ" customClass="R87DownloaderImageView">
+                                <rect key="frame" x="835" y="554" width="250" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="OOl-uZ-cNs"/>
+                                    <constraint firstAttribute="width" constant="250" id="flb-Ve-DJj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA0-Ug-qRc">
+                                <rect key="frame" x="821" y="854" width="278" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="add images"/>
+                                <connections>
+                                    <action selector="addImages" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="nTl-6b-pDP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SA0-Ug-qRc" firstAttribute="top" secondItem="5mj-u7-NLQ" secondAttribute="bottom" constant="50" id="2oa-2o-OY4"/>
+                            <constraint firstItem="SA0-Ug-qRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E8w-po-qao"/>
+                            <constraint firstItem="yle-G2-8DJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="LVL-Dl-RDj"/>
+                            <constraint firstItem="5mj-u7-NLQ" firstAttribute="top" secondItem="9Gc-O6-q5H" secondAttribute="bottom" constant="25" id="Phf-z3-5hh"/>
+                            <constraint firstItem="5mj-u7-NLQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eEx-V2-OZc"/>
+                            <constraint firstItem="9Gc-O6-q5H" firstAttribute="top" secondItem="yle-G2-8DJ" secondAttribute="bottom" constant="50" id="gYD-zb-f0y"/>
+                            <constraint firstItem="yle-G2-8DJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="600" id="pBu-dH-kkW"/>
+                            <constraint firstItem="9Gc-O6-q5H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0b-De-on6"/>
+                            <constraint firstAttribute="trailing" secondItem="yle-G2-8DJ" secondAttribute="trailing" constant="600" id="zMf-Le-dzd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImageView" destination="9Gc-O6-q5H" id="fzd-Pt-Faf"/>
+                        <outlet property="secondImageView" destination="5mj-u7-NLQ" id="I00-E0-2Cb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
