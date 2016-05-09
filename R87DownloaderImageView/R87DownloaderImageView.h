@@ -50,7 +50,7 @@
  
  If you set a custom UIView then that view will be displayed while the image is being downloaded.
  
- @note If you don't set this property then a <code>UIActivityIndicatorViewStyleGray</code> type <code>UIActivityIndicatorView</code> will appear.
+ @note If you don't set this property then a <code>UIActivityIndicatorViewStyleGray</code> type <code>UIActivityIndicatorView</code> will appear in case of iOS, <code>UIActivityIndicatorViewStyleWhite</code> in case of tvOS.
 */
 @property (strong, nonatomic) UIView *activityIndicator;
 

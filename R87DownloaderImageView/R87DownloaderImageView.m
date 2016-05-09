@@ -42,7 +42,13 @@
 // getters
 - (UIView *)activityIndicator {
 	if (!_activityIndicator) {
-		UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+		UIActivityIndicatorViewStyle style;
+#if TARGET_OS_IOS
+		style = UIActivityIndicatorViewStyleGray;
+#else
+		style = UIActivityIndicatorViewStyleWhite;
+#endif
+		UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:style];
 		[activityIndicator startAnimating];
 		
 		_activityIndicator = activityIndicator;
@@ -67,7 +73,22 @@
 	
 	// show UIActivityIndicatorView
 	[self addSubview:self.activityIndicator];
-	self.activityIndicator.center = CGPointMake(self.frame.size.width / 2.0, self.frame.size.height / 2.0);
+	self.activityIndicator.translatesAutoresizingMaskIntoConstraints = NO;
+	
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:self.activityIndicator
+													 attribute:NSLayoutAttributeCenterX
+													 relatedBy:NSLayoutRelationEqual
+														toItem:self
+													 attribute:NSLayoutAttributeCenterX
+													multiplier:1.0
+													  constant:0.0]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:self.activityIndicator
+													 attribute:NSLayoutAttributeCenterY
+													 relatedBy:NSLayoutRelationEqual
+														toItem:self
+													 attribute:NSLayoutAttributeCenterY
+													multiplier:1.0
+													  constant:0.0]];
 	
 	// download image
 	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:imageLink]];

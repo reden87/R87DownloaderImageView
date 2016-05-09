@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name               = "R87DownloaderImageView"
-  s.version            = "1.0.1"
+  s.version            = "2.0.0"
   s.summary            = "R87DownloaderImageView is a UIImageView subclass which makes possible to download an image from the provided link."
   
   s.description        = <<-DESC
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
   s.author             = { "Gergő Németh" => "http://reden87.info/" }
   s.social_media_url   = "http://twitter.com/reden87"
 
-  s.platform           = :ios
-  s.platform           = :ios, "5.0"
+  s.ios.deployment_target = '6.0'
+  s.tvos.deployment_target = '9.0'
 
-  s.source             = { :git => "https://github.com/reden87/R87DownloaderImageView.git", :tag => "1.0.1" }
+  s.source             = { :git => "https://github.com/reden87/R87DownloaderImageView.git", :tag => s.version.to_s }
 
   s.source_files       = "R87DownloaderImageView/*.{h,m}"
 
